@@ -1,0 +1,3 @@
+Nome: carlos, Nota: 10.0
+Nome: pedro, Nota: 9.6
+Nome: Lucas, Nota: 9.6

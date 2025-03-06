@@ -55,11 +55,20 @@ with open("disciplinas.txt", "r") as arquivo:
 except FileNotFoundError as error:
     print("arquivo inexistente", error)'''
 
-try:
+'''try:
     with open("naoexistetxt", "r") as arquivo:
         arquivo.write("java")
 except IOError as e:
-    print("O erro foi: ", e)
+    print("O erro foi: ", e)'''
+
+alunos = [("carlos",10.0), ("pedro", 9.6), ("Lucas", 9.6)]
+
+with open("notas.txt", "w") as arquivo:
+    for aluno in alunos:
+        arquivo.write(f"Nome: {aluno[0]}, Nota: {aluno[1]}\n")
+
+with open("notas.txt", "r") as arquivo:
+    print(arquivo.read())
 
 
 
