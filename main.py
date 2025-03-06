@@ -21,7 +21,14 @@ arquivo.close()
 print(arquivo.closed)'''
 
 '''arquivo = open("frutas.txt","w")
-arquivo.write("banana")
-arquivo.write("uva")
-arquivo.write("mamao")
+arquivo.write("banana\n")
+arquivo.write("uva\n")
+arquivo.write("mamao\n")
 arquivo.close()'''
+
+precos = [8000]
+
+with open("precos.txt", "w") as arquivo:
+    for preco in precos:
+        arquivo.write(f"{preco} \n")
+print(arquivo.closed)
