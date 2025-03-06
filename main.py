@@ -40,13 +40,26 @@ with open("precos.txt", "a") as arquivo:
         arquivo.write(f"{preco} \n")
 print(arquivo.closed)'''
 
-disciplinas = ["RAD\n", "C++\n", "Python\n", "C\n"]
+'''disciplinas = ["RAD\n", "C++\n", "Python\n", "C\n"]
 
 with open("disciplinas.txt", "w") as arquivo:
     arquivo.writelines(disciplinas)
 
 with open("disciplinas.txt", "r") as arquivo:
-    print(arquivo.read())
+    print(arquivo.read())'''
+
+''''try:
+    with open("naoexistetxt", "r") as arquivo:
+        print(arquivo.read())
+
+except FileNotFoundError as error:
+    print("arquivo inexistente", error)'''
+
+try:
+    with open("naoexistetxt", "r") as arquivo:
+        arquivo.write("java")
+except IOError as e:
+    print("O erro foi: ", e)
 
 
 
