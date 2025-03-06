@@ -67,8 +67,15 @@ with open("notas.txt", "w") as arquivo:
     for aluno in alunos:
         arquivo.write(f"Nome: {aluno[0]}, Nota: {aluno[1]}\n")
 
-with open("notas.txt", "r") as arquivo:
-    print(arquivo.read())
+
+try:
+    with open("notas.txt", "w") as arquivo:
+        print(arquivo.read())
+except FileNotFoundError:
+    print("arquivo inexistente")
+except IOError:
+    print("erro na leitura do arquivo")
+
 
 
 
