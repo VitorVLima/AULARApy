@@ -26,9 +26,26 @@ arquivo.write("uva\n")
 arquivo.write("mamao\n")
 arquivo.close()'''
 
-precos = [8000]
+'''precos = [8000]
 
 with open("precos.txt", "w") as arquivo:
     for preco in precos:
         arquivo.write(f"{preco} \n")
-print(arquivo.closed)
+print(arquivo.closed)'''
+
+'''precos = [500, 600, 300, 660]
+
+with open("precos.txt", "a") as arquivo:
+    for preco in precos:
+        arquivo.write(f"{preco} \n")
+print(arquivo.closed)'''
+
+disciplinas = ["RAD\n", "C++\n", "Python\n", "C\n"]
+
+with open("disciplinas.txt", "w") as arquivo:
+    arquivo.writelines(disciplinas)
+
+
+
+
+
