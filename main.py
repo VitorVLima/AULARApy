@@ -45,6 +45,11 @@ disciplinas = ["RAD\n", "C++\n", "Python\n", "C\n"]
 with open("disciplinas.txt", "w") as arquivo:
     arquivo.writelines(disciplinas)
 
+with open("disciplinas.txt", "r") as arquivo:
+    print(arquivo.read())
+
+
+
 
 
 
